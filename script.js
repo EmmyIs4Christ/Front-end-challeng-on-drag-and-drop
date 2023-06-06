@@ -21,3 +21,33 @@ btn.addEventListener("click", function () {
     firstCont.appendChild(el);
   });
 });
+
+allGragabbles.forEach((dragabble) => {
+    dragabble.addEventListener("dragstart", function () {
+      dragabble.classList.add("dragging");
+    });
+  
+    dragabble.addEventListener("dragend", function () {
+      dragabble.classList.remove("dragging");
+  
+      //activating and removing the drop notification
+      message.classList.remove("hide-message");
+      const myTimer = setTimeout(() => {
+          message.classList.add("hide-message");
+          clearTimeout(myTimer);
+      },
+        1000
+      );
+    });
+  });
+  
+  //handling the container boxes
+  containers.forEach((container) => {
+    container.addEventListener("dragover", (e) => {
+      e.preventDefault();
+  
+      let dragabble = document.querySelector(".dragging");
+      container.appendChild(dragabble);
+    });
+  });
+  
