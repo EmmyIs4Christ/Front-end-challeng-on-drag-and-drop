@@ -12,3 +12,115 @@ body {
 	transition: all ease 0.5s;
 	/* height: 100vh; */
 }
+
+#main-content {
+    width: 95%;
+	margin: 0 auto;
+}
+
+header {
+	/* background-color: bisque; */
+	padding-top: 2rem;
+	color: rgb(7, 7, 133);
+}
+
+.side-info {
+	margin: 1.5rem 0 0;
+	color:rgb(220, 142, 69);
+}
+
+.message {
+	transition: all ease 0.5s;
+	margin: 2.5rem auto;
+	background-color: rgb(245, 144, 50);
+	border-radius: 10px;
+	width: 15rem;
+	padding: 2px;
+	box-shadow: 3px 3px 5px 1px rgb(87, 84, 84);
+}
+
+.hide-message {
+	visibility: hidden;
+}
+
+#hero-container {
+	background-color: rgb(232 244 247 / 68%);
+	margin: 0 auto;
+	display: grid;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px 1px rgb(87, 84, 84);
+	grid-template-columns: 1fr 1fr;
+	width: 90%;
+}
+
+.container {
+	width: 50%;
+	margin: 2rem auto;
+	background-color: #333;
+	padding: 1rem;
+	margin-top: 1rem;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.container, .drop {
+	height: 20rem;
+	width: 50%;
+}
+
+.draggable {
+	padding: 1rem;
+	background-color: white;
+	border: 1px solid black;
+	cursor: move;
+}
+
+.dragging {
+	opacity: 0.5;
+}
+
+.btn {
+	display: block;
+	text-align: center;
+	width: 20%;
+	margin: 2rem auto;
+	text-align: center;
+	padding: 1rem;
+	cursor: pointer;
+	background-color: rgb(7, 7, 133);
+	border-radius: 5px;
+	color: white;
+	border: none;
+}
+
+.drop {
+	text-align: center;
+	background-color: #333;
+	width: 60%;
+	margin: auto;
+	border-radius: 10px;
+	padding: 0.5rem 1rem 1rem;
+}
+
+.drop .container {
+	margin-top: -1rem;
+}
+
+span {
+	text-align: center;
+	color: white;
+}
+
+
+@media (max-width: 640px) {
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	#hero-container {
+		
+		grid-template-columns: 1fr;
+	}
+	
+  }
