@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and drop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <div id="main-content">
+    <header>
+        <h1>FRONT-END CHALLENGE ON DRAG AND DROP</h1>
+        <p class="side-info">Built with HTML, CSS and JavaScript.</p>
+      </header>
+      <p class="message hide-message">One item dropped successfully</p>
+  
+      <div id="hero-container">
+        <div class="container firstcont" id="innerHtml">
+          <p class="draggable" draggable="true">Item 1</p>
+          <p class="draggable" draggable="true">Item 2</p>
+          <p class="draggable" draggable="true">Item 3</p>
+          <p class="draggable" draggable="true">Item 4</p>
+          <p class="draggable" draggable="true">Item 5</p>
+        </div>
+        <div class="drop container">
+          <span>Drop Here</span>
+          <div class=" secondcont" draggable="true"></div>
+        </div>
+      </div>
+      <button class="btn">Reset</button>
+   </div>
+  </body>
+  <script src="script.js"></script>
+</html>
